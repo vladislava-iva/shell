@@ -7,8 +7,8 @@ int main() {
   std::cout << std::unitbuf;
   std::cerr << std::unitbuf;
 
-  std::string history_file=std::string(getenv("home"))+"/.kubsh_history";
-  std::ofstream history_out(history_file, std::ios::app);
+  std::string history_file=".kubsh_history";
+  std::ofstream out(history_file, std::ios::app);
   std::string input;
   std::cout<<"$ ";
 
@@ -23,7 +23,6 @@ int main() {
         while (std::getline(history_in,line)) {
             std::cout<<line<<std::endl;
         }
-
         continue;
     }
 
