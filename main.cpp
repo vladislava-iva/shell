@@ -19,7 +19,7 @@ int main() {
 
     if (input=="history") {
         std::ifstream history_in(history_file);
-        std:: string line;
+        std::string line;
         while (std::getline(history_in,line)) {
             std::cout<<line<<std::endl;
         }
@@ -35,7 +35,7 @@ int main() {
     } 
 
     if (!input.empty()){
-        history_out<<input<<std::endl;
+        out<<input<<std::endl;
     }
   }
 
