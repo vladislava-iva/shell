@@ -44,7 +44,7 @@ int main() {
     }
 
     else if(!input.empty()){
-        std::cout<<"Error: "<<input<<" is unknown command"<<std::endl;
+        system(input.c_str());
     } 
 
     if (!input.empty()){
